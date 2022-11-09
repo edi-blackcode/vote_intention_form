@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta viewport="">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+<h1 id="title">Vote intention form</h1>
+<p id="description">The research's form seeks to reveal the scenario of choice of candidate for the presidency of Brazil</p>
+
+<form id="survey-form">
+  <fieldset>
+   <label 
+   id="name-label"> Name</label>
+   <input
+   id="name"
+   name="name" 
+   type="text"
+   placeholder="Type your name here"
+   required />
+      
+    <br>
+
+    <label id="email-label">
+     E-mail</label>
+     <input
+     id="email"
+     type="email"
+     name="email"
+     placeholder="Type your e-mail here"
+     required />
+
+     <br>
+
+     <label id="number-label">ID Number</label>
+     <input 
+     id="number"
+     type="number"
+     name="number"
+     min="8"
+     max="13"
+     placeholder="Type your choosed number here" 
+     required />
+</fieldset>
+   
+   <br>
+<fieldset>
+<p>Which candidate do you prefer?
+<span class="clue"></span>
+</p>
+
+<select id="dropdown" name="number" class="number-vote" required>
+<option type="checkbox" value="">(select one)</option>
+<option type="checkbox" value="1">Lula</option>
+<option type="checkbox" value="2">Bolsonaro</option>
+<option type="checkbox" value="3">None</option>
+<option type="checkbox" value="4">Other</option>
+</select>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend> Choose the better option to explain your vote: </legend>
+
+<div>
+<label>
+<input      id="passion" 
+         type="radio" 
+         name="vote" 
+         class="inline" 
+         value="option"/> Vote by passion</label>
+</div>
+
+<div>
+<label>
+<input 
+         id="obligation" 
+         type="radio" 
+         name="vote"
+         class="inline" 
+         value="option"/> Vote by obligation</label>
+</div>
+
+<div>
+<label>
+<input        id="consciouness" 
+         type="radio" 
+         name="vote"
+         class="inline" value="consciouness"/> Vote by  political consciousness</label>
+</div>
+</fieldset>
+
+<br>
+
+<label>
+<p>Do you think it is important to vote for the keeping of democracy? Justify your vote: </p>
+
+<textarea id="justify" value="value" name="justify" rows="5" cols="40" placeholder="I'm gonna vote in my candidate because ...">
+</textarea>
+</label>
+
+<br>
+
+<fieldset>
+<label> <p>which characteristics in a presidential candidate are important when deciding your vote? You can choose more than one option bellow:</p><br>
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="1">lier
+</input> 
+
+<br>
+
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="2">friendly
+</input> 
+
+<br>
+
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="3">smart
+</input> 
+
+<br>
+       
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="4">leader
+</input>
+
+<br>
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="5">fascist
+</input> 
+
+<br>
+       
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="6">perverse
+</input> 
+
+<br>
+       
+<input 
+type="checkbox" 
+name="options" 
+class="inline" 
+value="7">fair
+</input>
+
+<br>
+<input 
+type="checkbox" 
+name="options" 
+class="inline"
+value="8">humble
+</input>
+
+<br>
+
+<input 
+type="checkbox"
+name="options" 
+class="inline"
+value="9">racist
+</input>
+
+<br> 
+
+<input 
+type="checkbox"
+name="options" 
+class="inline"
+value= "10">homophobic
+</input>
+
+<br> 
+
+</label>
+</fieldset>
+
+<input id="submit" type="submit" value="Submit"/>
+
+</form>
+</body>
+</html>
